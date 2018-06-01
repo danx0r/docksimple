@@ -1,5 +1,5 @@
 #!/usr/bin/python
 import os
-cmd = "docker run -t -p 80:80 danx0r/docksimple:latest"
+cmd = "docker run -t -p 80:80 -p 443:443 danx0r/docksimple:latest"
 print cmd
 os.system(cmd)
