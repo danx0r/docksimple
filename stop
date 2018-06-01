@@ -3,10 +3,9 @@ import os
 os.system("docker ps > __exdoc__")
 f = open("__exdoc__")
 for row in f.readlines():
-    if "danx0r/docksimple:latest" in row:
+    if "danx0r/docksimple" in row:
         id = row[:12]
-        break
-cmd = "docker stop %s" % id
-print cmd
+        cmd = "docker stop %s" % id
+        print cmd
+        os.system(cmd)
 os.system("rm __exdoc__")
-os.system(cmd)
