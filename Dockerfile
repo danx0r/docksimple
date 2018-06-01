@@ -6,7 +6,7 @@ RUN apt-get install -y apache2 python
 RUN apt-get install -y less
 
 # Install apache and write hello world message
-RUN echo "It's dock simple!" > /var/www/html/index.html
+RUN echo "It's dock simple, Danx0r" > /var/www/html/index.html
 
 # Configure apache
 RUN a2enmod rewrite

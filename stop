@@ -3,7 +3,7 @@ import os
 os.system("docker ps > __exdoc__")
 f = open("__exdoc__")
 for row in f.readlines():
-    if "docksimple:latest" in row:
+    if "danx0r/docksimple:latest" in row:
         id = row[:12]
         break
 cmd = "docker stop %s" % id
